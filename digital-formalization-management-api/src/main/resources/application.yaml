@@ -1,0 +1,17 @@
+server:
+  port : 8082
+
+spring:
+  application: name=digital-formalization-management-api
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: santanderdb
+      
+feign:
+  httpclient:
+    disable-ssl-validation: true
+  autoconfiguration:
+    jackson:
+      enabled: true
